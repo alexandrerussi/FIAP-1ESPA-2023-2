@@ -5,12 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+    <link rel= "stylesheet" href="style.css">
+
+    <!-- INTERNO -->
+    <style>
+        form {
+            background-color: blue;
+        }
+    </style>
+
+    <!-- EXTERNO -->
 </head>
 
 <body>
     <main>
         <form>
-            <div>
+            <div style="background-color: aquamarine;">
                 <label for="txtNome">Nome: </label>
                 <input type="text" name="txtNome" id="txtNome">
             </div>
@@ -55,7 +65,7 @@
             <br>
             <div>
                 <label for="txtArea">Fala ai pra mim da sua vida:</label><br>
-                <textarea name="txtArea" id="txtArea" cols="30" rows="5"></textarea>
+                <textarea  name="txtArea" id="txtArea" cols="30" rows="5"></textarea>
             </div>
             <input type="submit" value="Finalizar">
         </form>
