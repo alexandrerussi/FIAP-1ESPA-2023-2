@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <main>
+        <form>
+            <div>
+                <label for="txtNome">Nome: </label>
+                <input type="text" name="txtNome" id="txtNome">
+            </div>
+            <div>
+                <label for="txtEmail">E-mail: </label>
+                <input type="email" name="txtEmail" id="txtEmail">
+            </div>
+            <div>
+                <label for="txtSenha">Senha: </label>
+                <input type="password" name="txtSenha" id="txtSenha">
+            </div>
+            <div>
+                <label for="dataNasc">Data de nascimento: </label>
+                <input type="date" name="dataNasc" id="dataNasc">
+            </div>
+
+            <div>
+                <p>Escolha sua linguagem preferida: </p>
+
+                <input type="radio" name="favLinguagens" id="html" value="html">
+                <label for="html">HTML</label><br>
+
+                <input type="radio" name="favLinguagens" id="css" value="css">
+                <label for="css">CSS</label><br>
+
+                <input type="radio" name="favLinguagens" id="js" value="js">
+                <label for="js">JavaScript</label>
+            </div>
+
+            <div>
+                <p>Selecione o seu tipo de transporte:</p>
+
+                <input type="checkbox" name="veiculo1" id="veiculo1">
+                <label for="veiculo1">Bicicleta</label><br>
+
+                <input type="checkbox" name="veiculo2" id="veiculo2">
+                <label for="veiculo2">Carro</label><br>
+
+                <input type="checkbox" name="veiculo3" id="veiculo3">
+                <label for="veiculo3">O famoso mercedez de pobre</label>
+            </div>
+            <br>
+            <div>
+                <label for="txtArea">Fala ai pra mim da sua vida:</label><br>
+                <textarea name="txtArea" id="txtArea" cols="30" rows="5"></textarea>
+            </div>
+            <input type="submit" value="Finalizar">
+        </form>
+    </main>
+</body>
+
+</html>
