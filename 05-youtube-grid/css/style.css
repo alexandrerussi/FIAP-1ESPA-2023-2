@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: white;
+    font-family: Arial;
+}
+
+.video-box {
+    width: 350px;
+}
+
+.video-box .thumbnail, .video-box .thumbnail img {
+    width: 100%;
+}
+
+.video-box .thumbnail img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    margin-top: 8px;
+    column-gap: 10px;
+}
+
+.content .channel-img, .channel-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.content .text h2 {
+    font-size: 1rem;
+}
+
+.content .text p {
+    font-size: 0.85rem;
+}
