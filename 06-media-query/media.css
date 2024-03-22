@@ -1,0 +1,23 @@
+html {
+    font-size: 16px;
+}
+
+h1, p {
+    color: red;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    h1, p {
+        color: blue;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h1, p {
+        color: green;
+    }
+}
