@@ -1,0 +1,19 @@
+@use 'mixins';
+@use 'variables';
+
+body {
+    @include mixins.zero-config(0, 0);
+}
+
+.container {
+    @include mixins.div-size(80%, 100vh);
+    @include mixins.div-style(variables.$primary-color);
+    // @include flex-config(row, center, center);
+    margin: 0 auto;
+
+    .box {
+        @include mixins.div-size(300px, 200px);
+        @include mixins.div-style(variables.$secondary-color);
+        @include mixins.relative-center();
+    }
+}

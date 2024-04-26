@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1f1f1f;
+  color: #91a3ad;
+  font-family: "Segoe UI", Verdana, sans-serif;
+}
+
+main {
+  width: 50%;
+  height: auto;
+  background: none;
+  margin: 0 auto;
+  padding: 6vh 0;
+}
+main h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 180px;
+  position: relative;
+}/*# sourceMappingURL=style.css.map */

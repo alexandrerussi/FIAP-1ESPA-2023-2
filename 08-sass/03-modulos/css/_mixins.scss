@@ -25,20 +25,3 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-body {
-    @include zero-config(0, 0);
-}
-
-.container {
-    @include div-size(80%, 100vh);
-    @include div-style(#e7e7e7);
-    // @include flex-config(row, center, center);
-    margin: 0 auto;
-
-    .box {
-        @include div-size(300px, 200px);
-        @include div-style();
-        @include relative-center();
-    }
-}

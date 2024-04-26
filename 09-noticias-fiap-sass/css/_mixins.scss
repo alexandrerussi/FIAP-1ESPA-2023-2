@@ -1,0 +1,19 @@
+@mixin zero-config {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin div-config($width, $height, $bg) {
+    width: $width;
+    height: $height;
+    background: $bg;
+}
+
+@mixin div-center {
+    margin: 0 auto;
+}
+
+@mixin title-config($ft-size, $txt-transf) {
+    font-size: $ft-size;
+    text-transform: $txt-transf;
+}

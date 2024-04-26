@@ -1,0 +1,24 @@
+@use "mixins";
+@use "variables";
+
+* {
+    @include mixins.zero-config();
+}
+
+body {
+    background-color: variables.$dark-color;
+    color: variables.$light-color;
+    font-family: variables.$font-family;
+}
+
+main {
+    @include mixins.div-config(50%, auto, none);
+    @include mixins.div-center();
+    padding: 6vh 0;
+
+    h1 {
+        @include mixins.title-config(50px, uppercase);
+        margin-bottom: 180px;
+        position: relative;
+    }
+}

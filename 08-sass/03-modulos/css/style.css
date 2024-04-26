@@ -6,13 +6,13 @@ body {
 .container {
   width: 80%;
   height: 100vh;
-  background-color: #e7e7e7;
+  background-color: #880000;
   margin: 0 auto;
 }
 .container .box {
   width: 300px;
   height: 200px;
-  background-color: #d43aff;
+  background-color: #0f005a;
   position: relative;
   top: 50%;
   left: 50%;
