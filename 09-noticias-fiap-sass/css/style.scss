@@ -12,7 +12,7 @@ body {
 }
 
 main {
-    @include mixins.div-config(50%, auto, none);
+    @include mixins.div-config(60%, auto, none);
     @include mixins.div-center();
     padding: 6vh 0;
 
@@ -20,5 +20,96 @@ main {
         @include mixins.title-config(50px, uppercase);
         margin-bottom: 180px;
         position: relative;
+
+        &::after { 
+            content: "";
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 120px;
+            background-color: variables.$magenta-color;
+            bottom: -20px;
+        }
+    }
+
+    form {
+        margin: 40px 0;
+
+        input {
+            @include mixins.input-config(
+                1px solid variables.$gray-color,
+                250px,
+                50px,
+                20px,
+                14px,
+                variables.$light-color
+            );
+
+            &:focus {
+                box-shadow: 0 0 0 0;
+                outline: 0;
+            }
+
+            &::placeholder {
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    section.noticias {
+        @include mixins.flex-init(space-between);
+
+        article.noticia {
+            @include mixins.div-config(40%, auto, none);
+            padding: 45px 0;
+            min-width: 320px;
+
+            h2 {
+                @include mixins.title-config(23px, uppercase);
+                margin: 0;
+            }
+
+            p.data {
+                color: variables.$gray-color;
+                font-weight: bold;
+                margin: 25px 0 50px 0;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 70px;
+                    height: 4px;
+                    background-color: variables.$magenta-color;
+                    bottom: -25px;
+                }
+            }
+
+            p.conteudo {
+                margin-bottom: 40px;
+            }
+
+            a.btn {
+                @include mixins.button(
+                    variables.$magenta-color,
+                    bold,
+                    14px,
+                    1px solid variables.$magenta-color,
+                    15px 20px
+                );
+            }
+
+            a.btn-2 {
+                @include mixins.button(
+                    variables.$light-color,
+                    bold,
+                    10px,
+                    1px solid variables.$light-color,
+                    5px 20px
+                );
+            }
+        }
     }
 }
