@@ -1,0 +1,32 @@
+.main-section {
+    height: 100vh;
+}
+
+#chat-log {
+    width: 90%;
+    background-color: #eaeaea;
+    padding: 5vh;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.message--sent {
+    text-align: left;
+    color: #8b003a;
+}
+
+.message--sent::before {
+    content: "Usuário";
+    font-size: 12px;
+    color: #8b003a;
+}
+
+.message--received {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.message--received::before {
+    content: "Assistente (API)";
+    font-size: 12px;
+}
