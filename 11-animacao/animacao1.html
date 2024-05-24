@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+
+    <style>
+
+        @keyframes pulsar {
+            0%,
+            100% {
+                background-color: blue;
+                transform: scale(1);
+            }
+
+            50% {
+                background-color: red;
+                transform: scale(1.5);
+            }
+        }
+
+
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 100px;
+            background-color: red;
+
+            animation-name: pulsar;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+</body>
+
+</html>

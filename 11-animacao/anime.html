@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box, .box-circle {
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+            background-color: tomato;
+        }
+
+        .box-circle {
+            position: relative;
+        }
+
+        input {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p class="text">Olá mundo</p>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <p class="bateria">{"charged": "0%", "cycles": 120}</p>
+
+    <div class="box-circle"></div>
+
+    <input type="text" value="0">
+
+    <!-- LINKANDO O ANIME.JS -->
+    <script src="anime.min.js"></script>
+
+    <!-- SCRIPT DAS ANIMAÇÕES -->
+    <script>
+        anime({
+            targets: '.text',
+            translateX: 250
+        });
+
+        let boxElements = document.querySelectorAll(".box");
+
+        anime({
+            targets: boxElements,
+            translateX: 270
+        });
+
+        let logBateria = document.querySelector(".bateria");
+
+        let bateria = {
+            charged: "0%",
+            cycles: 120
+        }
+
+        anime({
+            targets: bateria,
+            charged: "100%",
+            cycles: 200,
+            round: 1,
+            easing: 'linear',
+            update: function () {
+                logBateria.innerHTML = JSON.stringify(bateria);
+            }
+        });
+
+        anime({
+            targets: '.box-circle',
+            left: '240px',
+            backgroundColor: '#F00',
+            borderRadius: ['0%', '50%'],
+            easing: 'easeInOutQuad'
+        });
+
+        anime({
+            targets: 'input',
+            value: [0, 1000],
+            round: 1,
+            easing: 'easeInOutExpo'
+        });
+    </script>
+</body>
+</html>
